@@ -29,8 +29,4 @@ class calculateRecords {
     records.add(min);
     return records;
   }
-  // public static List<Integer> breakingRecords(List<Integer> scores) {
-  // // Write your code here
-  // return scores;
-  // }
 }
