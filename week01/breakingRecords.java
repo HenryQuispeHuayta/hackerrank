@@ -23,6 +23,7 @@ class calculateRecords {
       if(maximum != auxMaximum) max++;
       if(minimum != auxMinimum) min++;
     }
+
     List <Integer> records = new ArrayList<>();
     records.add(max);
     records.add(min);
