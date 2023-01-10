@@ -8,22 +8,21 @@ public class camelCase {
     // String s = "S;M;plasticCup()";
     // String s = "C;C;coffee machine";
     // String s = "C;M;white sheet of paper";
-    // CamelCaseSol.solution(s);
-    System.out.println(CamelCaseSol.combinateString("M", "coffee machine"));
-    // System.out.println(s.charAt(0));
+    // String s = "S;V;pictureFrame";
+    while(sc.hasNextLine()){
+      String input = sc.nextLine();
+      CamelCaseSol.solution(input);
+    }
   }
 }
 
 class CamelCaseSol {
   public static void solution(String s) {
-    // S (split) or C (combine)
-    // M indicates method, C indicates class, and V indicates variable
-
     String[] splitS = s.split(";");
     if (splitS[0].equals("S")) {
-      System.out.println(splitS[1]);
+      System.out.println(splitString(splitS[1], splitS[2]));
     } else {
-      System.out.println(splitS[0]);
+      System.out.println(combinateString(splitS[1], splitS[2]));
     }
   }
 
@@ -40,6 +39,22 @@ class CamelCaseSol {
     }
     if (st.equals("M"))
       txtCombinate += "()";
-    return txtCombinate;
+    return txtCombinate.trim();
+  }
+
+  public static String splitString(String st, String txt) {
+    String txtSplit = "";
+    int initial = 0;
+    if (st.equals("M"))
+      txt = txt.replace("()", "");
+    for (int i = 0; i < txt.length(); i++) {
+      if (Character.isUpperCase(txt.charAt(i))) {
+        txtSplit += txt.substring(initial, i) + " ";
+        initial = i;
+      }
+    }
+    txtSplit += txt.substring(initial) + " ";
+    txtSplit = txtSplit.toLowerCase();
+    return txtSplit.trim();
   }
 }
