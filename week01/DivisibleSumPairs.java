@@ -41,8 +41,7 @@ class DivisibleSumPairsResult {
         count += map.get(complement);
       if (map.containsKey(mod)) {
         map.put(mod, map.get(mod) + 1);
-      }
-      if (!map.containsKey(mod)) {
+      } else {
         map.put(mod, 1);
       }
     }
