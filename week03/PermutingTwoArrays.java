@@ -28,7 +28,7 @@ class PermutingTwoArraysResult {
   // List<Integer> B) {
   // public static List<Integer> twoArrays(int k, List<Integer> A, List<Integer> B) {
     public static String twoArrays(int k, List<Integer> A, List<Integer> B) {
-    List<Integer> aux = new ArrayList<Integer>();
+    // List<Integer> aux = new ArrayList<Integer>();
     // HashMap<Integer, Integer> auxMap = new HashMap<Integer, Integer>();
     // HashMap<Integer, Integer> mapB = new HashMap<Integer, Integer>();
     // for (Integer value : B) {
