@@ -18,14 +18,14 @@ class FlippingBitsResult {
       }
       binary = auxString.toString();
     }
-    String binaryFlipping = "";
-    String[] converterBinary = binary.split("");
-    for (int i = 0; i < converterBinary.length; i++) {
-      if (converterBinary[i].equals("1"))
-        binaryFlipping += "0";
-      if (converterBinary[i].equals("0"))
-        binaryFlipping += "1";
-    }
+    String binaryFlipping = binary.replace("1", "3").replace("0", "1").replace("3", "0");
+    // String[] converterBinary = binary.split("");
+    // for (int i = 0; i < converterBinary.length; i++) {
+    //   if (converterBinary[i].equals("1"))
+    //     binaryFlipping += "0";
+    //   if (converterBinary[i].equals("0"))
+    //     binaryFlipping += "1";
+    // }
 
     long outFlipping = 0;
     // Integer.to
