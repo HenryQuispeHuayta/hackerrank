@@ -7,7 +7,6 @@ public class NumberLineJumps {
     // System.out.println(NumberLineJumpsResult.kangaroo(23, 9867, 9814, 5861));
     // System.out.println(NumberLineJumpsResult.kangaroo(43, 2, 70, 2));
     System.out.println(NumberLineJumpsResult.kangaroo(4, 2, 3, 2));
-    // System.out.println(4 % 2);
   }
 }
 
