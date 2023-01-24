@@ -6,12 +6,6 @@ public class CaesarCipher {
     //     87));
     // System.out.println(CaesarCipherResult.caesarCipher("Z", 27));
     System.out.println(CaesarCipherResult.caesarCipher("Always-Look-on-the-Bright-Side-of-Life", 5));
-    // System.out.println((double)(87-26)/26);
-    // System.out.println((int) Math.ceil(2.3));
-    // int k = 87;
-    // int n = k > 26 ? (int) Math.ceil((double) (k - 26) / 26) : 1;
-    // System.out.println(n);
-    // System.out.println(87 - 26 - 26 - 26);
   }
 }
 
