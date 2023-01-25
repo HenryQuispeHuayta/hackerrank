@@ -41,6 +41,6 @@ class StrongPasswordResult {
     if(!password.matches(".*[0-9].*")) minimum++;
     if(!password.matches(".*[!@#$%^&*()-+].*")) minimum++;
 
-    return minimum + n > 5 ? minimum : 6 - n;
+    return Math.max(6 - n, minimum);
   }
 }
